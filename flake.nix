@@ -21,6 +21,7 @@
     {
       packages.x86_64-linux = rec {
         crabby = (rustPkgs.workspace.crabby { });
+        default = crabby;
       };
 
       devShells."x86_64-linux".default = (rustPkgs.workspaceShell {
