@@ -27,6 +27,10 @@
         nativeBuildInputs = [
           cargo2nix.packages.x86_64-linux.default
           pkgs.rustfmt
+
+          # Native dependencies for libnotify
+          pkgs.pkg-config
+          pkgs.libnotify
         ];
       });
     };
